@@ -1,0 +1,674 @@
+{
+ "FunctionName": "gdImageColorMatch",
+ "Blocks":[
+  {
+   "BlockID": 0.000000,
+   "Stmt": "null", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 1.000000,
+   "Stmt": "gdFree(buf)", 
+   "PDG Edges": [
+    14.100000,
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+    14.100000
+   ]
+  },
+  {
+   "BlockID": 1.100000,
+   "Stmt": "return 0;", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 2.000000,
+   "Stmt": "color++", 
+   "PDG Edges": [
+    2.000000,
+    4.300000,
+    6.000000,
+    7.100000
+   ],
+   "CDG Edges": [
+    6.000000
+   ],
+   "DDG Edges": [
+    2.000000,
+    4.300000,
+    7.100000
+   ]
+  },
+  {
+   "BlockID": 3.000000,
+   "Stmt": "bp += 4", 
+   "PDG Edges": [
+    3.000000,
+    5.100000,
+    7.000000
+   ],
+   "CDG Edges": [
+    5.100000
+   ],
+   "DDG Edges": [
+    3.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 4.000000,
+   "Stmt": "im2->red[color] = *(bp++) / count", 
+   "PDG Edges": [
+    3.000000,
+    5.000000,
+    5.100000,
+    7.000000
+   ],
+   "CDG Edges": [
+    5.100000
+   ],
+   "DDG Edges": [
+    3.000000,
+    5.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 4.100000,
+   "Stmt": "im2->green[color] = *(bp++) / count", 
+   "PDG Edges": [
+    3.000000,
+    5.000000,
+    5.100000,
+    7.000000
+   ],
+   "CDG Edges": [
+    5.100000
+   ],
+   "DDG Edges": [
+    3.000000,
+    5.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 4.200000,
+   "Stmt": "im2->blue[color] = *(bp++) / count", 
+   "PDG Edges": [
+    3.000000,
+    5.000000,
+    5.100000,
+    7.000000
+   ],
+   "CDG Edges": [
+    5.100000
+   ],
+   "DDG Edges": [
+    3.000000,
+    5.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 4.300000,
+   "Stmt": "im2->alpha[color] = *(bp++) / count", 
+   "PDG Edges": [
+    3.000000,
+    5.000000,
+    5.100000,
+    7.000000
+   ],
+   "CDG Edges": [
+    5.100000
+   ],
+   "DDG Edges": [
+    3.000000,
+    5.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 5.000000,
+   "Stmt": "count = *(bp++)", 
+   "PDG Edges": [
+    3.000000,
+    6.000000,
+    7.000000
+   ],
+   "CDG Edges": [
+    6.000000
+   ],
+   "DDG Edges": [
+    3.000000,
+    7.000000
+   ]
+  },
+  {
+   "BlockID": 5.100000,
+   "Stmt": "count > 0", 
+   "PDG Edges": [
+    5.000000,
+    6.000000
+   ],
+   "CDG Edges": [
+    6.000000
+   ],
+   "DDG Edges": [
+    5.000000
+   ]
+  },
+  {
+   "BlockID": 6.000000,
+   "Stmt": "color < im2->colorsTotal", 
+   "PDG Edges": [
+    2.000000,
+    4.300000,
+    6.000000,
+    7.100000,
+    16.000000
+   ],
+   "CDG Edges": [
+    6.000000,
+    16.000000
+   ],
+   "DDG Edges": [
+    2.000000,
+    4.300000,
+    7.100000
+   ]
+  },
+  {
+   "BlockID": 7.000000,
+   "Stmt": "bp = buf", 
+   "PDG Edges": [
+    14.100000,
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+    14.100000
+   ]
+  },
+  {
+   "BlockID": 7.100000,
+   "Stmt": "color = 0", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 8.000000,
+   "Stmt": "x++", 
+   "PDG Edges": [
+    8.000000,
+    13.000000,
+    14.300000
+   ],
+   "CDG Edges": [
+    13.000000
+   ],
+   "DDG Edges": [
+    8.000000,
+    14.300000
+   ]
+  },
+  {
+   "BlockID": 9.000000,
+   "Stmt": "y++", 
+   "PDG Edges": [
+    9.000000,
+    11.000000,
+    12.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    9.000000,
+    12.000000
+   ]
+  },
+  {
+   "BlockID": 10.000000,
+   "Stmt": "color = im2->pixels[y][x]", 
+   "PDG Edges": [
+    8.000000,
+    9.000000,
+    11.000000,
+    12.000000,
+    14.300000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    8.000000,
+    9.000000,
+    12.000000,
+    14.300000
+   ]
+  },
+  {
+   "BlockID": 10.100000,
+   "Stmt": "rgb = im1->tpixels[y][x]", 
+   "PDG Edges": [
+    8.000000,
+    9.000000,
+    11.000000,
+    12.000000,
+    14.300000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    8.000000,
+    9.000000,
+    12.000000,
+    14.300000
+   ]
+  },
+  {
+   "BlockID": 10.200000,
+   "Stmt": "bp = buf + (color * 5)", 
+   "PDG Edges": [
+    10.000000,
+    11.000000,
+    14.100000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.000000,
+    14.100000
+   ]
+  },
+  {
+   "BlockID": 10.300000,
+   "Stmt": "(*(bp++))++", 
+   "PDG Edges": [
+    10.200000,
+    11.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.200000
+   ]
+  },
+  {
+   "BlockID": 10.400000,
+   "Stmt": "*(bp++) += (((rgb) & 16711680) >> 16)", 
+   "PDG Edges": [
+    10.100000,
+    10.300000,
+    11.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.100000,
+    10.300000
+   ]
+  },
+  {
+   "BlockID": 10.500000,
+   "Stmt": "*(bp++) += (((rgb) & 65280) >> 8)", 
+   "PDG Edges": [
+    10.100000,
+    10.400000,
+    11.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.100000,
+    10.400000
+   ]
+  },
+  {
+   "BlockID": 10.600000,
+   "Stmt": "*(bp++) += ((rgb) & 255)", 
+   "PDG Edges": [
+    10.100000,
+    10.500000,
+    11.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.100000,
+    10.500000
+   ]
+  },
+  {
+   "BlockID": 10.700000,
+   "Stmt": "*(bp++) += (((rgb) & 2130706432) >> 24)", 
+   "PDG Edges": [
+    10.100000,
+    10.600000,
+    11.000000
+   ],
+   "CDG Edges": [
+    11.000000
+   ],
+   "DDG Edges": [
+    10.100000,
+    10.600000
+   ]
+  },
+  {
+   "BlockID": 11.000000,
+   "Stmt": "y < im1->sy", 
+   "PDG Edges": [
+    9.000000,
+    11.000000,
+    12.000000,
+    13.000000
+   ],
+   "CDG Edges": [
+    11.000000,
+    13.000000
+   ],
+   "DDG Edges": [
+    9.000000,
+    12.000000
+   ]
+  },
+  {
+   "BlockID": 12.000000,
+   "Stmt": "y = 0", 
+   "PDG Edges": [
+    13.000000
+   ],
+   "CDG Edges": [
+    13.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 13.000000,
+   "Stmt": "x < im1->sx", 
+   "PDG Edges": [
+    8.000000,
+    13.000000,
+    14.300000,
+    16.000000
+   ],
+   "CDG Edges": [
+    13.000000,
+    16.000000
+   ],
+   "DDG Edges": [
+    8.000000,
+    14.300000
+   ]
+  },
+  {
+   "BlockID": 14.000000,
+   "Stmt": "gdMalloc(sizeof(unsigned long) * 5 * 256)", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 14.100000,
+   "Stmt": "buf = (unsigned long *)gdMalloc(sizeof(unsigned long) * 5 * 256)", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 14.200000,
+   "Stmt": "memset(buf, 0, sizeof(unsigned long) * 5 * 256)", 
+   "PDG Edges": [
+    14.100000,
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+    14.100000
+   ]
+  },
+  {
+   "BlockID": 14.300000,
+   "Stmt": "x = 0", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 15.000000,
+   "Stmt": "return -4;", 
+   "PDG Edges": [
+    16.000000
+   ],
+   "CDG Edges": [
+    16.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 16.000000,
+   "Stmt": "im2->colorsTotal < 1", 
+   "PDG Edges": [
+    18.000000
+   ],
+   "CDG Edges": [
+    18.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 17.000000,
+   "Stmt": "return -3;", 
+   "PDG Edges": [
+    18.000000,
+    19.000000
+   ],
+   "CDG Edges": [
+    18.000000,
+    19.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 18.000000,
+   "Stmt": "im1->sy != im2->sy", 
+   "PDG Edges": [
+    19.000000
+   ],
+   "CDG Edges": [
+    19.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 19.000000,
+   "Stmt": "im1->sx != im2->sx", 
+   "PDG Edges": [
+    21.000000
+   ],
+   "CDG Edges": [
+    21.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 20.000000,
+   "Stmt": "return -2;", 
+   "PDG Edges": [
+    21.000000
+   ],
+   "CDG Edges": [
+    21.000000
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 21.000000,
+   "Stmt": "im2->trueColor", 
+   "PDG Edges": [
+    23.700001
+   ],
+   "CDG Edges": [
+    23.700001
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 22.000000,
+   "Stmt": "return -1;", 
+   "PDG Edges": [
+    23.700001
+   ],
+   "CDG Edges": [
+    23.700001
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.000000,
+   "Stmt": "unsigned long *buf;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.100000,
+   "Stmt": "unsigned long *bp;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.200001,
+   "Stmt": "int color;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.299999,
+   "Stmt": "int rgb;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.400000,
+   "Stmt": "int x;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.500000,
+   "Stmt": "int y;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.600000,
+   "Stmt": "int count;", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 23.700001,
+   "Stmt": "!im1->trueColor", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  },
+  {
+   "BlockID": 24.000000,
+   "Stmt": "null", 
+   "PDG Edges": [
+   ],
+   "CDG Edges": [
+   ],
+   "DDG Edges": [
+   ]
+  }
+}
