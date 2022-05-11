@@ -5,6 +5,7 @@
 #include <clang/AST/ASTContext.h>
 #include <clang/Analysis/CFG.h>
 #include <clang/Tooling/CommonOptionsParser.h>
+#include <clang/Basic/SourceManager.h>
 
 // LLVM includes
 #include <llvm/ADT/StringRef.h>
@@ -13,6 +14,7 @@
 #include <algorithm>
 #include <queue>
 #include <stack>
+#include <set>
 #include <sstream>
 #include <fstream>
 

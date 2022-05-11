@@ -1,5 +1,3 @@
-# Clang-based source code Slicer
-
 How to run: 
 
 ```
